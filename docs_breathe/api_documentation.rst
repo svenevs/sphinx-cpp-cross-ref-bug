@@ -1,0 +1,4 @@
+Breathe Documentation
+=====================
+
+.. doxygenindex::

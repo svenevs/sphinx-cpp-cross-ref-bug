@@ -103,9 +103,9 @@ Sphinx C++ domain and the Breathe directives create the same mangled names:
 | Breathe Directive ID | `_CPPv3N7simgrid3s4u5Actor4killEv`      |
 
 
-| Function             | `static void simgrid::s4u::Actor::kil(aid_t)` |
-|----------------------|-----------------------------------------------|
-| Sphinx C++ Domain ID | `_CPPv3N7simgrid3s4u5Actor4killE5aid_t`       |
-| Breathe Directive ID | `_CPPv3N7simgrid3s4u5Actor4killE5aid_t`       |
+| Function             | `static void simgrid::s4u::Actor::kill(aid_t)` |
+|----------------------|------------------------------------------------|
+| Sphinx C++ Domain ID | `_CPPv3N7simgrid3s4u5Actor4killE5aid_t`        |
+| Breathe Directive ID | `_CPPv3N7simgrid3s4u5Actor4killE5aid_t`        |
 
 Therefore, this appears to be a Sphinx bug?  It's very confusing how this happens...

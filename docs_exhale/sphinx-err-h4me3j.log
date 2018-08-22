@@ -1,0 +1,50 @@
+# Sphinx version: 1.8.0b1
+# Python version: 2.7.13 (CPython)
+# Docutils version: 0.14 
+# Jinja2 version: 2.10
+# Last messages:
+#   writing output... [ 18%] api/classsimgrid_1_1s4u_1_1Actor
+#   writing output... [ 27%] api/dir_include
+#   writing output... [ 36%] api/file_include_the_code.hpp
+#   writing output... [ 45%] api/file_view_hierarchy
+#   writing output... [ 54%] api/library_root
+#   writing output... [ 63%] api/namespace_simgrid
+#   writing output... [ 72%] api/namespace_simgrid__s4u
+#   writing output... [ 81%] api/program_listing_file_include_the_code.hpp
+#   writing output... [ 90%] api/unabridged_api
+#   writing output... [100%] index
+# Loaded extensions:
+#   sphinx.ext.mathjax (1.8.0b1) from /home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/ext/mathjax.pyc
+#   alabaster (0.7.11) from /home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/alabaster/__init__.pyc
+#   breathe (4.10.0) from /home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/breathe/__init__.pyc
+#   exhale (0.2.0) from /home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/exhale/__init__.pyc
+Traceback (most recent call last):
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/cmd/build.py", line 304, in build_main
+    app.build(args.force_all, filenames)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/application.py", line 341, in build
+    self.builder.build_update()
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/builders/__init__.py", line 350, in build_update
+    len(to_build))
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/builders/__init__.py", line 415, in build
+    self.write(docnames, list(updated_docnames), method)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/builders/__init__.py", line 596, in write
+    self._write_serial(sorted(docnames))
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/builders/__init__.py", line 604, in _write_serial
+    doctree = self.env.get_and_resolve_doctree(docname, self)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/environment/__init__.py", line 623, in get_and_resolve_doctree
+    self.apply_post_transforms(doctree, docname)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/environment/__init__.py", line 670, in apply_post_transforms
+    transformer.apply_transforms()
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/transforms/__init__.py", line 90, in apply_transforms
+    Transformer.apply_transforms(self)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/docutils/transforms/__init__.py", line 171, in apply_transforms
+    transform.apply(**kwargs)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/transforms/post_transforms/__init__.py", line 90, in apply
+    typ, target, node, contnode)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/domains/cpp.py", line 6767, in resolve_xref
+    target, node, contnode)[0]
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/domains/cpp.py", line 6683, in _resolve_xref_inner
+    matchSelf=True, recurseInAnon=True)
+  File "/home/sven/Desktop/sphinx-cpp-cross-ref-bug/docs_exhale/venv/lib/python2.7/site-packages/sphinx/domains/cpp.py", line 4170, in find_declaration
+    candId = symbol.declaration.get_newest_id()
+AttributeError: 'NoneType' object has no attribute 'get_newest_id'
